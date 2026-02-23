@@ -4,28 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To-Do List</title>
+    <link rel="stylesheet" href="style.css">
     </head>
 <body>
 
     <div class="app-wrapper">
-
         <header class="app-header">
             <img src="image/todo.svg" alt="TODO Logo" class="logo-image">
         </header>
-
         <form class="add-task-form">
             <input type="text" placeholder="Agregue un elemento de tarea pendiente..." class="task-input" required>
             <button type="submit" class="add-btn">Agregar</button>
         </form>
-
         <main class="content-layout">
-
             <section class="tasks-section">
                 <div class="tasks-toolbar">
                     <button class="mark-all-btn">Marcar todo listo</button>
                     <button class="scroll-top-btn">↑</button> 
                 </div>
-                
                 <div class="empty-state" id="emptyStateContainer">
                     <p>¡Agrega tu primer artículo para hacer! </p>
                     <p>Consejos de uso:</p>
@@ -37,7 +33,6 @@
                         <li> Admite descarga e importación de datos.</li>
                     </ul>
                 </div>
-
                 <ul class="task-list" id="taskListContainer">
                     
                     <li class="task-item">

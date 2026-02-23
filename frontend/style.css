@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+body {
+    background-color: var(--bg-color);
+    background-image: radial-gradient(var(--dot-color) 2px, transparent 2px);
+    background-size: 20px 20px; 
+    color: var(--border-color);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.app-wrapper {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-image {
+    width: 250px;
+    height: 80px;      
+    object-fit: contain; 
+}
+
+
+
+.add-task-form {
+    display: flex;
+    width: 100%;
+    max-width: 650px; 
+    background-color: #ffffff;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: 8px; 
+    box-shadow: var(--box-shadow-hard);
+    overflow: hidden; 
+    margin-bottom: 20px;
+}
+
+.task-input {
+    flex-grow: 1; 
+    padding: 15px 20px;
+    border: none; 
+    outline: none; 
+    font-size: 16px;
+    color: var(--border-color);
+    background-color: transparent;
+}
+
+.task-input::placeholder {
+    color: #999;
+}
+
+.add-btn {
+    background-color: var(--primary-pink);
+    color: var(--border-color);
+    border: none;
+    border-left: var(--border-width) solid var(--border-color); 
+    padding: 0 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+
+.add-btn:hover {
+    background-color: #ffb8c9; 
+}
