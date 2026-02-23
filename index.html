@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    </head>
+<body>
+
+    <div class="app-wrapper">
+
+        <header class="app-header">
+            <img src="image/todo.svg" alt="TODO Logo" class="logo-image">
+        </header>
+
+        <form class="add-task-form">
+            <input type="text" placeholder="Agregue un elemento de tarea pendiente..." class="task-input" required>
+            <button type="submit" class="add-btn">Agregar</button>
+        </form>
+
+        <main class="content-layout">
+
+            <section class="tasks-section">
+                <div class="tasks-toolbar">
+                    <button class="mark-all-btn">Marcar todo listo</button>
+                    <button class="scroll-top-btn">↑</button> 
+                </div>
+                
+                <div class="empty-state" id="emptyStateContainer">
+                    <p>¡Agrega tu primer artículo para hacer! </p>
+                    <p>Consejos de uso:</p>
+                    <ul>
+                        <li> Presione Enter para enviar acciones.</li>
+                        <li> Haga doble clic para editar el eslogan y las tareas.</li>
+                        <li> Accede a acciones rápidas en la barra lateral derecha.</li>
+                        <li> Sus datos se almacenan localmente en su navegador.</li>
+                        <li> Admite descarga e importación de datos.</li>
+                    </ul>
+                </div>
+
+                <ul class="task-list" id="taskListContainer">
+                    
+                    <li class="task-item">
+                        <div class="view-mode">
+                            <button class="check-btn"></button> 
+                            <span class="task-text">fagraasd</span> 
+                            <button class="delete-btn">X</button> 
+                        </div>
+                        <div class="edit-mode"">
+                            <input type="text" class="edit-input" value="fagraasd">
+                            <button class="save-btn">↑</button>
+                        </div>
+                    </li>
+
+                    <li class="task-item">
+                        <div class="view-mode">
+                            <button class="check-btn"></button> 
+                            <span class="task-text">asi se ve la lista</span> 
+                            <button class="delete-btn">X</button> 
+                        </div>
+                        <div class="edit-mode" ">
+                            <input type="text" class="edit-input" value="asi se ve la lista">
+                            <button class="save-btn">↑</button>
+                        </div>
+                    </li>
+
+                </ul>
+
+                <div class="tasks-footer" id="tasksFooter">
+                    <span class="items-count">2 elementos restantes</span>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="sidebar-header">
+                    <h2>ABIERTO </h2>
+                </div>
+                <nav class="sidebar-nav">
+                    <button class="nav-btn active">Todo</button>
+                    <button class="nav-btn">Basura</button>
+                    <button class="nav-btn">Finalizar todo</button>
+                    <button class="nav-btn">Limpiar todo</button>
+                    <button class="nav-btn">Exportar datos</button>
+                    <button class="nav-btn">Importar(txt/json)</button>
+                </nav>
+            </aside>
+
+        </main>
+
+    </div>
+
+</body>
+</html>
