@@ -1,0 +1,13 @@
+CREATE DATABASE todolist_db;
+
+
+CREATE TABLE todos (
+    id SERIAL PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    completed SMALLINT DEFAULT 0 CHECK (completed IN (0, 1)),
+    order_index INTEGER DEFAULT 0,
+    due_date DATE,
+    priority INTEGER CHECK (priority IN (1, 2, 3)),
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -20,5 +20,4 @@ pool.connect((err, client, release) => {
     if (client) release(); 
 });
 
-
 module.exports = pool;

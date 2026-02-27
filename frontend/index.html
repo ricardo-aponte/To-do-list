@@ -20,10 +20,10 @@
         
         <main class="content-layout">
             <section class="tasks-section">
-                <div class="tasks-toolbar">
+                <header class="tasks-toolbar">
                     <button class="mark-all-btn" id="markAllBtn">Marcar todo listo</button>
                     <button class="scroll-top-btn">↑</button> 
-                </div>
+                </header>
                 
                 <div class="empty-state" id="emptyStateContainer">
                     <p>¡Agrega tu primer artículo para hacer! </p>
@@ -31,27 +31,26 @@
                     <ul>
                         <li> Presione Enter para enviar acciones.</li>
                         <li> Haga doble clic para editar las tareas.</li>
-                        <li> Accede a filtros en la barra lateral derecha.</li>
+                        <li>Accede a filtros en la barra lateral derecha.</li>
                         <li> Los datos se guardarán en tu base de datos.</li>
                     </ul>
                 </div>
                 
                 <ul class="task-list" id="taskListContainer"></ul>
 
-                <div class="tasks-footer" id="tasksFooter">
+                <footer class="tasks-footer" id="tasksFooter">
                     <span class="items-count" id="itemsCount">0 elementos restantes</span>
-                </div>
+                </footer>
             </section>
 
             <aside class="sidebar">
-                <div class="sidebar-header">
+                <header class="sidebar-header">
                     <h2>FILTROS </h2>
-                </div>
+                </header>
                 <nav class="sidebar-nav">
                     <button class="nav-btn active" data-filter="all">Todas</button>
                     <button class="nav-btn" data-filter="active">Activas (Pendientes)</button>
                     <button class="nav-btn" data-filter="completed">Completadas</button>
-                    
                     <button class="nav-btn" id="clearCompletedBtn">Limpiar completadas</button>
                     <button class="nav-btn" id="exportBtn">Exportar datos</button>
                 </nav>
